@@ -18,6 +18,7 @@ Este projeto foi desenvolvido como parte da atividade do Capítulo 1 da Fase 3 n
 * Controlar um relé (bomba) com base nos dados dos sensores
 * Armazenar os dados no banco de dados SQL (simulado em Python)
 * Implementar operações de inserção, consulta, atualização e remoção (CRUD)
+* Relacionar o modelo de dados com o MER da Fase 2
 * Documentar toda a lógica no GitHub
 
 ---
@@ -42,6 +43,10 @@ Este projeto foi desenvolvido como parte da atividade do Capítulo 1 da Fase 3 n
 * O status da bomba é mostrado por um LED
 * Os dados são enviados via Serial Monitor
 * O circuito foi construído e simulado no `diagram.json`, utilizando os pinos corretamente no `main.ino`
+* **O código em C++ está comentado explicando cada etapa da lógica de leitura e decisão**
+* **A imagem do circuito Wokwi foi incluída no repositório e no README a seguir:**
+
+![Circuito Wokwi](./Dashboard_Streamlit.png)
 
 ---
 
@@ -53,7 +58,14 @@ Este projeto foi desenvolvido como parte da atividade do Capítulo 1 da Fase 3 n
   * Criação da tabela `leitura_sensores`
   * Inserção de registros simulados
   * Consulta, atualização e exclusão de dados
-* A estrutura da tabela foi inspirada no MER do Capítulo 1 (Fase 2)
+* **As quatro operações CRUD estão implementadas com funções específicas no script:**
+
+  * `inserir_dados()`
+  * `consultar_dados()`
+  * `atualizar_umidade()`
+  * `remover_dado()`
+* **A estrutura da tabela foi inspirada no MER da Fase 2**, com entidade central `Leitura` relacionada aos sensores e atributos essenciais da análise agrícola.
+* Justificativa: Como o foco da simulação é monitorar os dados em tempo real, utilizamos uma única tabela de registros históricos (`leitura_sensores`) que representa cada coleta feita pelos sensores embarcados na máquina. Essa estrutura é suficiente para representar as medições de campo no contexto do projeto pedagógico.
 
 ### 🧾 Estrutura da tabela `leitura_sensores`
 
@@ -86,7 +98,7 @@ Fase3_Cap1/
 │   ├── api_clima.py            # Integração com OpenWeather (opcional)
 │   ├── dados_irrigacao.db      # Banco de dados local
 │   └── requirements.txt
-├── Dashboard_Streamlit.png     # Captura do dashboard
+├── Dashboard_Streamlit.png     # Captura do dashboard / circuito
 └── Dashboard_Streamlit.mp4     # Vídeo da aplicação
 ```
 
