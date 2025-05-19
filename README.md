@@ -46,7 +46,7 @@ Este projeto foi desenvolvido como parte da atividade do Capítulo 1 da Fase 3 n
 * **O código em C++ está comentado explicando cada etapa da lógica de leitura e decisão**
 * **A imagem do circuito Wokwi foi incluída no repositório e no README a seguir:**
 
-![Circuito Wokwi](./Dashboard_Streamlit.png)
+![Circuito](./CIRCUITO_ESP32.png)
 
 ---
 
@@ -125,6 +125,7 @@ python simulacao_banco.py
 ```bash
 streamlit run dashboard.py
 ```
+![Dashboard](./Dashboard_Streamlit.png)
 
 ### 🌦️ API de Clima (Ir Além 2)
 
