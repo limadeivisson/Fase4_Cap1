@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "author": "Deivisson Lima",
+  "description": "Simulação ESP32 - Sistema de Irrigação",
+  "devices": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 100,
+      "left": 100,
+      "rotate": 0
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht",
+      "top": 40,
+      "left": 300,
+      "rotate": 0,
+      "attrs": { "temperature": "25", "humidity": "60" }
+    },
+    {
+      "type": "wokwi-ldr",
+      "id": "ldr",
+      "top": 180,
+      "left": 300,
+      "rotate": 0
+    },
+    {
+      "type": "wokwi-button",
+      "id": "btn_p",
+      "top": 20,
+      "left": 20,
+      "attrs": { "label": "Fósforo (P)" }
+    },
+    {
+      "type": "wokwi-button",
+      "id": "btn_k",
+      "top": 80,
+      "left": 20,
+      "attrs": { "label": "Potássio (K)" }
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay",
+      "top": 250,
+      "left": 300,
+      "rotate": 0
+    }
+  ],
+  "connections": [
+    [ "dht:VCC", "esp:3V3", "red" ],
+    [ "dht:GND", "esp:GND.1", "black" ],
+    [ "dht:SIGNAL", "esp:15", "green" ],
+    [ "ldr:VCC", "esp:3V3", "red" ],
+    [ "ldr:GND", "esp:GND.2", "black" ],
+    [ "ldr:SIG", "esp:34", "yellow" ],
+    [ "btn_p:1.l", "esp:GND.1", "black" ],
+    [ "btn_p:2.r", "esp:18", "blue" ],
+    [ "btn_k:1.l", "esp:GND.1", "black" ],
+    [ "btn_k:2.r", "esp:19", "blue" ],
+    [ "relay:VCC", "esp:3V3", "red" ],
+    [ "relay:GND", "esp:GND.2", "black" ],
+    [ "relay:IN", "esp:5", "orange" ]
+  ]
+}
