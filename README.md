@@ -49,8 +49,6 @@ projeto-irrigacao/
 ├── diagram.json                  # Circuito Wokwi
 ├── platformio.ini                # Configuração PlatformIO
 ├── .gitignore                    # Exclusões de build
-├── docs/
-│   └── README_detalhado.txt
 ├── python_db/
 │   ├── simulacao_banco.py        # Banco SQLite e CRUD
 │   ├── dashboard.py              # Visualização com Streamlit
@@ -114,7 +112,6 @@ streamlit run python_db/dashboard.py  # Dashboard
 ## 👥 Integrantes do Grupo
 
 * Deivisson Gonçalves Lima – RM565095 – [deivisson.engtele@gmail.com](mailto:deivisson.engtele@gmail.com)
-* Lucian Paiva Binner – RM563350 – [lucian.binner@hotmail.com](mailto:lucian.binner@hotmail.com)
 * Omar Calil Abrão Mustafá Assem – RM561375 – [ocama12@gmail.com](mailto:ocama12@gmail.com)
 * Paulo Henrique de Sousa – RM564262 – [pauloo.sousa16@outlook.com](mailto:pauloo.sousa16@outlook.com)
 * Renan Danilo dos Santos Pereira – RM566175 – [renansantos4978@gmail.com](mailto:renansantos4978@gmail.com)
