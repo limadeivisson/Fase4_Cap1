@@ -1,4 +1,4 @@
-# 🌾 Projeto FIAP – Capítulo 1: Construindo uma Máquina Agrícola
+# 🌾 Projeto FIAP – Fase 3 - Capítulo 1: Construindo uma Máquina Agrícola
 
 [![Grupo](https://img.shields.io/badge/Grupo-085-green)]()
 [![Turma](https://img.shields.io/badge/Turma-1TIAOB%2F2025-blue)]()
@@ -152,7 +152,7 @@ python api_clima.py
 
 ---
 
-## 👥 Integrantes do Grupo 085
+## 👥 Integrantes do Grupo 85
 
 * Deivisson Gonçalves Lima – RM565095 – [deivisson.engtele@gmail.com](mailto:deivisson.engtele@gmail.com)
 * Omar Calil Abrão Mustafá Assem – RM561375 – [ocama12@gmail.com](mailto:ocama12@gmail.com)
