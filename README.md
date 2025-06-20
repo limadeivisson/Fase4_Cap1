@@ -104,7 +104,7 @@ Otimização de memória no ESP32: Ajustes no código C++ utilizando boas práti
 
 ## 🎥 Demonstração em Vídeo
 
-- 📹 Link do vídeo (não listado): [https://youtube.com/SEU_VIDEO_AQUI](https://youtu.be/If42tjnANio)
+- 📹 Link do vídeo (não listado): [(https://youtu.be/If42tjnANio)]
 
 ---
 
